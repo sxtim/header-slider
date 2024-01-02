@@ -4,36 +4,47 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Стартовый шаблон</title>
+		<title>Header slider</title>
 		<link rel="stylesheet" href="./css/main.css" />
 	</head>
 	<body>
-		<header class="header">
-    <div class="container">
-        <div class="header__row">
-            <div class="logo">Logo</div>
-            <button class="mobile-nav-btn">
-                <div class="nav-icon"></div>
-            </button>
-        </div>
+
+	<header class="header">
+<!--Swiper-->
+
+
+<!--Slider content-->
+
+
+<!--Header content-->
+		<div class="header__content">
+			<div class="header__nav">
+				<nav class="nav">
+    <a href="#!" class="nav__logo">
+        <img src="./../img/icons/logo.svg" alt="Logo">
+    </a>
+    <div class="nav__list">
+        <ul>
+            <li><a href="#!">Destinations</a></li>
+            <li><a href="#!">Activities</a></li>
+            <li><a href="#!">About Us</a></li>
+            <li><a href="#!">Contact</a></li>
+        </ul>
     </div>
-</header>
-<div class="mobile-nav">
-	<ul class="mobile-nav__list">
-		<li><a href="#" class="active">Home</a></li>
-		<li><a href="#!">Services</a></li>
-		<li><a href="#!">About</a></li>
-		<li><a href="#!">Projects</a></li>
-		<li><a href="#!">Contact</a></li>
-	</ul>
-</div>
+    <div class="nav__mobile-nav">
+        <button id="modalOpen" class="nav-btn">
+            <img src="./../img/icons/nav-btn.svg" alt="Nav button">
+        </button>
+    </div>
 
-		<footer class="footer">
-	<div class="container">
-		<h2>Footer</h2>
-	</div>
-</footer>
-
+</nav>
+			</div>
+			<div class="header__socials"></div>
+			<div class="header__see-more"></div>
+			<div class="header__slider-controls"></div>
+			<div class="header__scrollbar"></div>
+		</div>
+	</header>
 		<script src="./js/index.bundle.js"></script>
 	</body>
 </html>
