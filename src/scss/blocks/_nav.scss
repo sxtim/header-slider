@@ -6,6 +6,7 @@
 }
 
 .nav__logo {
+  pointer-events: all;
 }
 
 .nav__list {
@@ -24,7 +25,7 @@
 
 .nav__list a {
   position: relative;
-
+  pointer-events: all;
   &::before {
     position: absolute;
     content: '';
@@ -44,6 +45,7 @@
 }
 
 .nav__mobile-nav {
+  pointer-events: all;
 }
 
 .nav-btn {
