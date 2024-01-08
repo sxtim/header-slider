@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Header slider</title>
-		<link rel="stylesheet" href="./css/main.css" />
-	</head>
-	<body>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Header slider</title>
+    <link rel="stylesheet" href="./css/main.css"/>
+</head>
+<body>
 
-	<header class="header">
-<!--Swiper-->
-
-<!--Slider content-->
-		<div class="header__slide">
-			<div class="slide">
+<header class="header">
+    <!--Swiper-->
+<!--    <style>-->
+<!--        .swiper {-->
+<!--            width: 600px;-->
+<!--            height: 300px;-->
+<!--        }-->
+<!--    </style>-->
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><div class="slide">
     <div class="slide__header">
         <div class="slide__tagline">EXPLORE</div>
         <h1 class="slide__title">
@@ -34,12 +42,90 @@
             <div class="location__link">Plan a trip</div>
         </a>
     </div>
-</div>
-		</div>
-<!--Header content-->
-		<div class="header__content">
-			<div class="header__nav">
-				<nav class="nav">
+</div></div>
+            <div class="swiper-slide"><div class="slide">
+    <div class="slide__header">
+        <div class="slide__tagline">EXPLORE</div>
+        <h1 class="slide__title">
+            <span>Norway</span></h1>
+    </div>
+    <div class="slide__locations">
+        <a href="#!" class="locations">
+            <div class="location__title">Location #1</div>
+            <div class="location__link">Plan a trip</div>
+        </a>
+        <a href="#!" class="locations">
+            <div class="location__title">Location #2</div>
+            <div class="location__link">Plan a trip</div>
+        </a>
+        <a href="#!" class="locations">
+            <div class="location__title">Location #3</div>
+            <div class="location__link">Plan a trip</div>
+        </a>
+    </div>
+</div></div>
+            <div class="swiper-slide"><div class="slide">
+    <div class="slide__header">
+        <div class="slide__tagline">EXPLORE</div>
+        <h1 class="slide__title">
+            <span>Norway</span></h1>
+    </div>
+    <div class="slide__locations">
+        <a href="#!" class="locations">
+            <div class="location__title">Location #1</div>
+            <div class="location__link">Plan a trip</div>
+        </a>
+        <a href="#!" class="locations">
+            <div class="location__title">Location #2</div>
+            <div class="location__link">Plan a trip</div>
+        </a>
+        <a href="#!" class="locations">
+            <div class="location__title">Location #3</div>
+            <div class="location__link">Plan a trip</div>
+        </a>
+    </div>
+</div></div>
+            <div class="swiper-slide"><div class="slide">
+    <div class="slide__header">
+        <div class="slide__tagline">EXPLORE</div>
+        <h1 class="slide__title">
+            <span>Norway</span></h1>
+    </div>
+    <div class="slide__locations">
+        <a href="#!" class="locations">
+            <div class="location__title">Location #1</div>
+            <div class="location__link">Plan a trip</div>
+        </a>
+        <a href="#!" class="locations">
+            <div class="location__title">Location #2</div>
+            <div class="location__link">Plan a trip</div>
+        </a>
+        <a href="#!" class="locations">
+            <div class="location__title">Location #3</div>
+            <div class="location__link">Plan a trip</div>
+        </a>
+    </div>
+</div></div>
+<!--            <div class="swiper-slide">Slide 2</div>-->
+<!--            <div class="swiper-slide">Slide 3</div>-->
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+<!--        <div class="swiper-button-prev"></div>-->
+<!--        <div class="swiper-button-next"></div>-->
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+    <!--Slider content-->
+
+    <!--Header content-->
+    <div class="header__content">
+        <div class="header__nav">
+            <nav class="nav">
     <a href="#!" class="nav__logo">
         <img src="./../img/icons/logo.svg" alt="Logo">
     </a>
@@ -58,35 +144,35 @@
     </div>
 
 </nav>
-			</div>
-			<div class="header__socials">
-				<div class="socials">
+        </div>
+        <div class="header__socials">
+            <div class="socials">
 
     <a href="#!"><img src="./../img/socials/facebook.svg" alt="facebook"></a>
     <a href="#!"><img src="./../img/socials/twitter.svg" alt="twitter"></a>
     <a href="#!"><img src="./../img/socials/instagram.svg" alt="instagram"></a>
 
 </div>
-			</div>
-			<div class="header__see-more">
-				<a href="#!" class="see-more">SEE MORE</a>
-			</div>
-			<div class="header__slider-controls">
-				<div class="slider-controls">
+        </div>
+        <div class="header__see-more">
+            <a href="#!" class="see-more">SEE MORE</a>
+        </div>
+        <div class="header__slider-controls">
+            <div class="slider-controls">
     <div class="slider-controls__arrows">
         <button id="sliderPrev"><img src="./../img/icons/arrow-left.svg" alt="Prev"></button>
         <button id="sliderNext"><img src="./../img/icons/arrow-right.svg" alt="Next"></button>
     </div>
     <div class="slider-controls__count">
-        <span class="slider-controls__count-current">01</span>
-        /
-        <span>05</span>
+
     </div>
 </div>
-			</div>
-			<div class="header__scrollbar"></div>
-		</div>
-	</header>
-		<script src="./js/index.bundle.js"></script>
-	</body>
+        </div>
+        <div class="header__scrollbar">
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+</header>
+<script src="./js/index.bundle.js"></script>
+</body>
 </html>

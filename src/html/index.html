@@ -1,38 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Header slider</title>
-		<link rel="stylesheet" href="./css/main.css" />
-	</head>
-	<body>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Header slider</title>
+    <link rel="stylesheet" href="./css/main.css"/>
+</head>
+<body>
 <!--@@include('blocks/header.html')-->
-	<header class="header">
-<!--Swiper-->
+<header class="header">
+    <!--Swiper-->
+<!--    <style>-->
+<!--        .swiper {-->
+<!--            width: 600px;-->
+<!--            height: 300px;-->
+<!--        }-->
+<!--    </style>-->
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">@@include('blocks/slide.html')</div>
+            <div class="swiper-slide">@@include('blocks/slide.html')</div>
+            <div class="swiper-slide">@@include('blocks/slide.html')</div>
+            <div class="swiper-slide">@@include('blocks/slide.html')</div>
+<!--            <div class="swiper-slide">Slide 2</div>-->
+<!--            <div class="swiper-slide">Slide 3</div>-->
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
 
-<!--Slider content-->
-		<div class="header__slide">
-			@@include('blocks/slide.html')
-		</div>
-<!--Header content-->
-		<div class="header__content">
-			<div class="header__nav">
-				@@include('blocks/nav.html')
-			</div>
-			<div class="header__socials">
-				@@include('blocks/header-socials.html')
-			</div>
-			<div class="header__see-more">
-				<a href="#!" class="see-more">SEE MORE</a>
-			</div>
-			<div class="header__slider-controls">
-				@@include('blocks/slider-controls.html')
-			</div>
-			<div class="header__scrollbar"></div>
-		</div>
-	</header>
-		<script src="./js/index.bundle.js"></script>
-	</body>
+        <!-- If we need navigation buttons -->
+<!--        <div class="swiper-button-prev"></div>-->
+<!--        <div class="swiper-button-next"></div>-->
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+    <!--Slider content-->
+<!--    <div class="header__slide" none>@@include('blocks/slide.html')</div>-->
+    <!--Header content-->
+    <div class="header__content">
+        <div class="header__nav">
+            @@include('blocks/nav.html')
+        </div>
+        <div class="header__socials">
+            @@include('blocks/header-socials.html')
+        </div>
+        <div class="header__see-more">
+            <a href="#!" class="see-more">SEE MORE</a>
+        </div>
+        <div class="header__slider-controls">
+            @@include('blocks/slider-controls.html')
+        </div>
+        <div class="header__scrollbar">
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+</header>
+<script src="./js/index.bundle.js"></script>
+</body>
 </html>

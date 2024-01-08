@@ -96,12 +96,26 @@
 }
 
 .header__scrollbar {
+  pointer-events: all;
+  background-color: #ac182c;
   position: absolute;
   right: 0;
-  top: 50%;
-  transform: translate(0%, -50%);
+  top: 45px;
 
-  background-color: #878787;
-  width: 10px;
-  height: 400px;
+
+  width: 400px;
+  height: 10px;
+  //position: absolute;
+  //right: 0;
+  //top: 50%;
+  //transform: translate(0%, -50%);
+  //
+  //background-color: #878787;
+  //width: 10px;
+  //height: 400px;
+}
+
+.swiper-scrollbar {
+
+  height: 5px;
 }
