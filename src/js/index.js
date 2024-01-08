@@ -23,7 +23,7 @@ const swiper = new Swiper('.swiper', {
     // If we need pagination
     pagination: {
         el: '.slider-controls__count',
-        type: 'fraction'
+        type: 'fraction',
     },
 
     // Navigation arrows

@@ -85,6 +85,9 @@
       opacity: 0.3;
     }
   }
+  //@media(max-width: 1023px) {
+  //  display: none;
+  //}
 }
 
 
@@ -93,29 +96,29 @@
   right: 0;
   bottom: 0;
   pointer-events: all;
+
+  //@media(max-width: 1023px) {
+  //  display: none;
+  //}
+
 }
 
 .header__scrollbar {
   pointer-events: all;
-  background-color: #ac182c;
+  //background-color: #ac182c;
   position: absolute;
   right: 0;
-  top: 45px;
-
+  top: 45%;
 
   width: 400px;
   height: 10px;
-  //position: absolute;
-  //right: 0;
-  //top: 50%;
-  //transform: translate(0%, -50%);
-  //
-  //background-color: #878787;
-  //width: 10px;
-  //height: 400px;
+
+  transform: rotate(90deg) translate(50%, 0%);
+  transform-origin: right top;
+
+  @media(max-width: 767px) {
+
+  }
+
 }
 
-.swiper-scrollbar {
-
-  height: 5px;
-}

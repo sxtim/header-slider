@@ -10,12 +10,37 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #555;
-  //background-image: url("./../img/slider-bg/01.jpg");
-  background: var(--radial-bg), var(--linear-bg), url("./../img/slider-bg/01.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+
+  &--norway {
+    background: var(--radial-bg), var(--linear-bg), url("./../img/slider-bg/01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  &--austria {
+    background: var(--radial-bg), var(--linear-bg), url("./../img/slider-bg/02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  &--uae{
+    background: var(--radial-bg), var(--linear-bg), url("./../img/slider-bg/03.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  &--thailand{
+    background: var(--radial-bg), var(--linear-bg), url("./../img/slider-bg/04.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  &--morocco{
+    background: var(--radial-bg), var(--linear-bg), url("./../img/slider-bg/05.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
 
   &::before {
     content: '';
