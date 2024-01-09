@@ -37,6 +37,7 @@
 		"last 5 versions"
 	],
 	"dependencies": {
+		"gulp-cli": "^2.3.0",
 		"swiper": "^11.0.5"
 	}
 }

@@ -17,25 +17,29 @@
     background-size: cover;
     background-position: center center;
   }
+
   &--austria {
     background: var(--radial-bg), var(--linear-bg), url("./../img/slider-bg/02.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
   }
-  &--uae{
+
+  &--uae {
     background: var(--radial-bg), var(--linear-bg), url("./../img/slider-bg/03.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
   }
-  &--thailand{
+
+  &--thailand {
     background: var(--radial-bg), var(--linear-bg), url("./../img/slider-bg/04.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
   }
-  &--morocco{
+
+  &--morocco {
     background: var(--radial-bg), var(--linear-bg), url("./../img/slider-bg/05.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -103,14 +107,15 @@
   margin: 0 auto;
 
   @media(max-width: 1023px) {
-    width: 90px;
-  }
-
-  @media(max-width: 767px) {
-    width: 70%;
+    width: 50%;
     flex-direction: column;
     row-gap: 20px;
   }
+
+  //@media(max-width: 767px) {
+  //  //margin-left: 70px;
+  //
+  //}
 }
 
 .locations {
@@ -140,14 +145,14 @@
     filter: blur(3px);
     transition: all 0.2s ease-in;
   }
+
   &:hover::before {
     opacity: 0.8;
     filter: blur(10px);
   }
-
-
 }
-.location__title{
+
+.location__title {
   font-size: 20px;
   font-weight: 700;
   line-height: 1.2;
@@ -160,7 +165,7 @@
 
 }
 
-.location__link{
+.location__link {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.25;
