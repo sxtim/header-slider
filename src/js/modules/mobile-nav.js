@@ -18,7 +18,7 @@ function mobileNav() {
 		navOverlay.classList.toggle("mobile-nav-overlay--open");
 		nav.classList.toggle("mobile-nav--open");
 		document.body.classList.toggle("no-scroll");
-		console.log('click')
+
 	}
 }
 

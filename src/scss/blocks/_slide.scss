@@ -3,48 +3,59 @@
   --linear-bg: linear-gradient(181deg, rgba(0, 0, 0, 0.20) 0.91%, rgba(255, 255, 255, 0.00) 116.71%, rgba(255, 255, 255, 0.00) 116.72%);
 }
 
+@mixin background-size {
+  background-position: center center; /* x y */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .slide {
   height: 100vh;
   overflow: hidden;
   padding-bottom: 80px;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
+  background-color: #555;
+
+  background-position: center center; /* x y */
+  background-size: cover !important;
+  background-repeat: no-repeat;
+
   &--norway {
-    background: var(--radial-bg), var(--linear-bg), url("./../img/slider-bg/01.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background: var(--radial-bg), var(--linear-bg),
+    url('./../img/slider-bg/01.jpg');
+
+    @include background-size;
   }
 
   &--austria {
-    background: var(--radial-bg), var(--linear-bg), url("./../img/slider-bg/02.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background: var(--radial-bg), var(--linear-bg),
+    url('./../img/slider-bg/02.jpg');
+    @include background-size;
   }
 
   &--uae {
-    background: var(--radial-bg), var(--linear-bg), url("./../img/slider-bg/03.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background: var(--radial-bg), var(--linear-bg),
+    url('./../img/slider-bg/03.jpg');
+    @include background-size;
   }
 
   &--thailand {
-    background: var(--radial-bg), var(--linear-bg), url("./../img/slider-bg/04.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background: var(--radial-bg), var(--linear-bg),
+    url('./../img/slider-bg/04.jpg');
+    @include background-size;
   }
 
   &--morocco {
-    background: var(--radial-bg), var(--linear-bg), url("./../img/slider-bg/05.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background: var(--radial-bg), var(--linear-bg),
+    url('./../img/slider-bg/05.jpg');
+    @include background-size;
   }
+
+  color: #fff;
 
   &::before {
     content: '';
@@ -56,14 +67,14 @@
     cursor: grabbing;
   }
 
-  @media(max-width: 1200px) {
+  @media (max-width: 1200px) {
     padding-bottom: 60px;
   }
-  @media(max-width: 767px) {
+
+  @media (max-width: 767px) {
     padding-top: 100px;
     padding-bottom: 40px;
   }
-
 }
 
 .slide__header {
